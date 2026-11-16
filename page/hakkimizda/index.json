@@ -1,0 +1,47 @@
+{
+  "name": {
+    "tr": "Yaklaşım",
+    "en": "Approach",
+    "ar": "منهجنا"
+  },
+  "status": "play",
+  "category": "",
+  "id": "hakkimizda",
+  "url": "",
+  "path": "hakkimizda",
+  "index": 1,
+  "icon": "info",
+  "desing": {
+    "header": [],
+    "body": [
+      "tbryfc",
+      "z86ixq"
+    ],
+    "footer": []
+  },
+  "pathnext": "",
+  "description": {
+    "tr": "Işık, zaman, seçki ve izin: bir çekimin dört dokusu.",
+    "en": "Light, time, edit and consent: four textures of a shoot.",
+    "ar": "الضوء والوقت والمختارات والإذن: أربعة ملامس لجلسة واحدة."
+  },
+  "spot": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "desc": {},
+  "title": {
+    "tr": "Yaklaşım",
+    "en": "Approach",
+    "ar": "منهجنا"
+  },
+  "keyword": {
+    "tr": "hakkımızda",
+    "en": "about",
+    "ar": "من نحن"
+  },
+  "text": {},
+  "update": "2026-11-16T16:10:41.569Z",
+  "date": "2026-10-30"
+}

@@ -1,0 +1,93 @@
+<section class="modulex-iletisim-kartpostal{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-iletisim-kartpostal-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</section>
+
+<style>
+  /* iletisim-kartpostal — iletisim-zarf yazma eylemini form + zarf metaforuyla, iletisim-kartvizit tek kartla anlatır; bu modül KARTPOSTAL arka yüzü: border-image uçak postası şeritleri, pul kutusu + damga (::), mesaj/alıcı ikiye bölünmüş düzen ve el yazısı imza — form yok. */
+  .modulex-iletisim-kartpostal { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-iletisim-kartpostal *, .modulex-iletisim-kartpostal *::before, .modulex-iletisim-kartpostal *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-iletisim-kartpostal :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-iletisim-kartpostal :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-iletisim-kartpostal :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-iletisim-kartpostal :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-iletisim-kartpostal img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-iletisim-kartpostal) img { height: auto; }
+  .modulex-iletisim-kartpostal [hidden] { display: none !important; }
+  .modulex-iletisim-kartpostal :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-iletisim-kartpostal :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-iletisim-kartpostal-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-iletisim-kartpostal-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-iletisim-kartpostal--bassiz .modulex-iletisim-kartpostal-bas { display: none; }
+  .modulex-iletisim-kartpostal-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-iletisim-kartpostal-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-iletisim-kartpostal-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-iletisim-kartpostal-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-iletisim-kartpostal-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-iletisim-kartpostal-dugme:hover { transform: translateY(-2px); }
+  .modulex-iletisim-kartpostal-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-iletisim-kartpostal-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-iletisim-kartpostal-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-iletisim-kartpostal-kart { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); max-inline-size: 1080px; margin-inline: auto; padding: clamp(22px, 4vw, 48px); border: 12px solid transparent; border-image: repeating-linear-gradient(45deg, --accent-- 0 16px, --kartBg-- 16px 32px, --accentInk-- 32px 48px, --kartBg-- 48px 64px) 12; background: --kartBg--; box-shadow: 0 30px 60px -38px color-mix(in srgb, --text-- 55%, transparent); transform: rotate(-0.8deg); transition: transform 0.5s ease; }
+  .modulex-iletisim-kartpostal-kart:hover { transform: rotate(0deg) translateY(-4px); }
+  .modulex-iletisim-kartpostal-mesaj { display: grid; align-content: start; gap: 16px; padding-inline-end: clamp(18px, 3vw, 40px); border-inline-end: 2px solid --cizgi--; }
+  .modulex-iletisim-kartpostal-mesaj .modulex-iletisim-kartpostal-baslik { font-style: italic; }
+  .modulex-iletisim-kartpostal-imza { margin-block-start: 8px; color: --accentInk--; font-family: var(--mx-font-heading, inherit); font-size: 1.5rem; font-style: italic; font-weight: 700; transform: rotate(-3deg); }
+  .modulex-iletisim-kartpostal-alici { position: relative; display: grid; align-content: end; min-height: 300px; padding-block-start: 132px; padding-inline-start: clamp(18px, 3vw, 40px); }
+  .modulex-iletisim-kartpostal-pul { position: absolute; inset-block-start: 0; inset-inline-end: 0; display: grid; place-items: center; inline-size: 92px; block-size: 110px; border: 3px dashed color-mix(in srgb, --accentInk-- 70%, transparent); outline: 6px solid --kartBg--; background: color-mix(in srgb, --accent-- 16%, --kartBg--); color: --accentInk--; transition: transform 0.3s ease; }
+  .modulex-iletisim-kartpostal-pul .material-symbols-outlined { font-size: 44px; }
+  .modulex-iletisim-kartpostal-kart:hover .modulex-iletisim-kartpostal-pul { transform: rotate(4deg); }
+  .modulex-iletisim-kartpostal-damga { position: absolute; inset-block-start: 14px; inset-inline-end: 66px; inline-size: 100px; block-size: 100px; border: 3px solid color-mix(in srgb, --text-- 28%, transparent); border-radius: 50%; background-image: repeating-linear-gradient(0deg, transparent 0 10px, color-mix(in srgb, --text-- 22%, transparent) 10px 12px); transform: rotate(-16deg); pointer-events: none; animation: modulex-iletisim-kartpostal-vur 0.6s ease-out both; }
+  @keyframes modulex-iletisim-kartpostal-vur { from { opacity: 0; transform: rotate(-16deg) scale(1.6); } to { opacity: 1; transform: rotate(-16deg) scale(1); } }
+  .modulex-iletisim-kartpostal-satirlar { display: grid; gap: 4px; }
+  .modulex-iletisim-kartpostal-psat { display: grid; gap: 2px; padding-block: 10px 8px; border-block-end: 1.5px solid color-mix(in srgb, --text-- 30%, transparent); }
+  .modulex-iletisim-kartpostal-petk { color: --muted--; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+  .modulex-iletisim-kartpostal-pdeger { color: inherit; font-family: var(--mx-font-heading, inherit); font-size: 1.12rem; font-weight: 600; text-decoration: none; overflow-wrap: anywhere; transition: color 0.2s ease; }
+  a.modulex-iletisim-kartpostal-pdeger:hover { color: --accentInk--; }
+  @media (max-width: 768px) {
+    .modulex-iletisim-kartpostal-kart { grid-template-columns: minmax(0, 1fr); border-width: 8px; transform: none; }
+    .modulex-iletisim-kartpostal-mesaj { padding-inline-end: 0; padding-block-end: 22px; border-inline-end: 0; border-block-end: 2px solid --cizgi--; }
+    .modulex-iletisim-kartpostal-alici { min-height: 0; margin-block-start: 20px; padding-inline-start: 0; }
+  }
+  .modulex-iletisim-kartpostal-kikon { flex: none; display: inline-grid; place-items: center; width: 48px; height: 48px; border-radius: 14px; background: color-mix(in srgb, --accent-- 14%, transparent); color: --accentInk--; font-size: 24px; }
+  .modulex-iletisim-kartpostal-ketiket { display: block; color: --muted--; font-size: 0.82rem; font-weight: 650; letter-spacing: 0.06em; text-transform: uppercase; }
+  .modulex-iletisim-kartpostal-deger { color: inherit; font-weight: 650; text-decoration: none; overflow-wrap: anywhere; transition: color 0.2s ease; }
+  a.modulex-iletisim-kartpostal-deger:hover { color: --accentInk--; text-decoration: underline; text-underline-offset: 4px; }
+  .modulex-iletisim-kartpostal-eylem { display: inline-flex; align-items: center; gap: 6px; color: --accentInk--; font-weight: 700; text-decoration: none; transition: gap 0.2s ease; }
+  .modulex-iletisim-kartpostal-eylem:hover { gap: 10px; }
+  .modulex-iletisim-kartpostal-eylem .material-symbols-outlined { font-size: 18px; }
+  .modulex-iletisim-kartpostal-kopya { display: none; align-items: center; gap: 6px; min-height: 36px; padding: 6px 12px; border: 1px solid --cizgi--; border-radius: 999px; background: transparent; color: --text--; font: inherit; font-size: 0.85rem; font-weight: 650; transition: border-color 0.2s ease, background 0.2s ease; }
+  .modulex-iletisim-kartpostal--kjs .modulex-iletisim-kartpostal-kopya { display: inline-flex; }
+  .modulex-iletisim-kartpostal-kopya:hover { border-color: --accent--; }
+  .modulex-iletisim-kartpostal-kopya .material-symbols-outlined { font-size: 18px; }
+  .modulex-iletisim-kartpostal--kopyalandi { background: color-mix(in srgb, --accent-- 14%, transparent); }
+  .modulex-iletisim-kartpostal-sosyal { display: grid; gap: 10px; }
+  .modulex-iletisim-kartpostal-sbaslik { color: --muted--; font-size: 0.9rem; font-weight: 650; }
+  .modulex-iletisim-kartpostal-sliste { display: flex; flex-wrap: wrap; gap: 8px; }
+  .modulex-iletisim-kartpostal-cip { display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 8px 14px; border: 1px solid --cizgi--; border-radius: 999px; color: inherit; font-weight: 650; text-decoration: none; transition: border-color 0.2s ease, transform 0.2s ease; }
+  .modulex-iletisim-kartpostal-cip:hover { border-color: --accent--; transform: translateY(-2px); }
+  .modulex-iletisim-kartpostal-cikon { font-size: 18px; }
+  .modulex-iletisim-kartpostal-harita { position: relative; overflow: hidden; min-height: 280px; border-radius: --yuvarlak--; background: --kartBg--; }
+  .modulex-iletisim-kartpostal-iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .modulex-iletisim-kartpostal-hdesen { position: absolute; inset: 0; display: grid; place-items: center; background-color: color-mix(in srgb, --accent-- 8%, --kartBg--); background-image: linear-gradient(color-mix(in srgb, --text-- 7%, transparent) 1px, transparent 1px), linear-gradient(90deg, color-mix(in srgb, --text-- 7%, transparent) 1px, transparent 1px), radial-gradient(circle at 30% 40%, color-mix(in srgb, --accent-- 18%, transparent) 0 18%, transparent 19%); background-size: 36px 36px, 36px 36px, 100% 100%; }
+  .modulex-iletisim-kartpostal-pin { color: --accentInk--; font-size: 56px; animation: modulex-iletisim-kartpostal-zipla 2.4s ease-in-out infinite; }
+  @keyframes modulex-iletisim-kartpostal-zipla { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+  .modulex-iletisim-kartpostal-hyol { position: absolute; inset-block-end: 16px; inset-inline-start: 16px; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 10px 16px; border-radius: 999px; background: --bg--; color: --text--; font-weight: 700; text-decoration: none; box-shadow: 0 6px 20px color-mix(in srgb, --text-- 16%, transparent); transition: transform 0.2s ease; }
+  .modulex-iletisim-kartpostal-hyol:hover { transform: translateY(-2px); }
+  .modulex-iletisim-kartpostal-hyol .material-symbols-outlined { font-size: 18px; color: --accentInk--; }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-iletisim-kartpostal :is(.modulex-iletisim-kartpostal-baslik, .modulex-iletisim-kartpostal-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-iletisim-kartpostal-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-iletisim-kartpostal { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-iletisim-kartpostal *, .modulex-iletisim-kartpostal *::before, .modulex-iletisim-kartpostal *::after { animation: none !important; transition: none !important; }
+  }
+</style>

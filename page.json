@@ -1,0 +1,113 @@
+{
+  "data": [
+    {
+      "id": "7s2sphc934",
+      "name": {
+        "tr": "Paketler",
+        "en": "Packages",
+        "ar": "الباقات"
+      },
+      "description": {
+        "tr": "Portre, aile, ürün ve mekân çekim paketleri; KDV dahil kurgusal fiyatlar.",
+        "en": "Portrait, family, product and interior packages; fictional VAT-inclusive prices.",
+        "ar": "باقات البورتريه والعائلة والمنتجات والأماكن؛ أسعار افتراضية شاملة الضريبة."
+      },
+      "path": "hizmetler",
+      "icon": "sell",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "vhp17x",
+          "z86ixq"
+        ],
+        "footer": []
+      },
+      "index": 0
+    },
+    {
+      "name": {
+        "tr": "Yaklaşım",
+        "en": "Approach",
+        "ar": "منهجنا"
+      },
+      "status": "play",
+      "id": "hakkimizda",
+      "path": "hakkimizda",
+      "category": "",
+      "url": "",
+      "index": 1,
+      "icon": "info",
+      "desing": {
+        "header": [],
+        "body": [
+          "tbryfc",
+          "z86ixq"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Işık, zaman, seçki ve izin: bir çekimin dört dokusu.",
+        "en": "Light, time, edit and consent: four textures of a shoot.",
+        "ar": "الضوء والوقت والمختارات والإذن: أربعة ملامس لجلسة واحدة."
+      }
+    },
+    {
+      "id": "zer5dyjcce",
+      "name": {
+        "tr": "Albümler",
+        "en": "Albums",
+        "ar": "الألبومات"
+      },
+      "description": {
+        "tr": "Dört albümde seçilmiş kareler; görseller temsilîdir.",
+        "en": "Selected frames in four albums; images are representative.",
+        "ar": "لقطات مختارة في أربعة ألبومات؛ الصور تمثيلية."
+      },
+      "path": "referanslar",
+      "icon": "photo_library",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "oanja7",
+          "z86ixq"
+        ],
+        "footer": []
+      },
+      "index": 2
+    },
+    {
+      "name": {
+        "tr": "İletişim",
+        "en": "Contact",
+        "ar": "اتصل بنا"
+      },
+      "status": "play",
+      "id": "iletisim",
+      "path": "iletisim",
+      "category": "",
+      "url": "",
+      "index": 3,
+      "icon": "call",
+      "desing": {
+        "header": [],
+        "body": [
+          "zt02bq",
+          "k8mp01"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Adres, telefon ve çalışma saatleri.",
+        "en": "Address, phone and opening hours.",
+        "ar": "العنوان والهاتف وساعات العمل."
+      }
+    }
+  ],
+  "desc": []
+}

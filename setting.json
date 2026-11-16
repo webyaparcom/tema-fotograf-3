@@ -1,0 +1,54 @@
+{
+  "order": false,
+  "user": false,
+  "description": {
+    "tr": "Mira Fotoğraf Evi: portre, aile, ürün ve mekân fotoğrafı; tek sayfada çekim hikâyesi, albümler ve paketler. Demo site; görseller temsilîdir.",
+    "en": "Mira Photo House: portrait, family, product and interior photography; the shoot story, albums and packages on one page. Demo site; images are representative.",
+    "ar": "ميرا للتصوير: تصوير البورتريه والعائلة والمنتجات والأماكن؛ قصة الجلسة والألبومات والباقات في صفحة واحدة. موقع تجريبي؛ الصور تمثيلية."
+  },
+  "keyword": {
+    "tr": "fotoğraf stüdyosu, portre çekimi, aile fotoğrafı, ürün fotoğrafı, çekim paketleri",
+    "en": "photo studio, portrait session, family photography, product photography, photo packages",
+    "ar": "استوديو تصوير، جلسة بورتريه، تصوير عائلي، تصوير منتجات، باقات تصوير"
+  },
+  "category": "Kurumsal",
+  "name": "Mira Fotoğraf Evi",
+  "domain": "fotograf-3.webyapar.com",
+  "langs": {
+    "tr": true,
+    "en": true,
+    "ar": true,
+    "de": false,
+    "ru": false,
+    "es": false,
+    "fr": false,
+    "it": false,
+    "ja": false,
+    "zh": false,
+    "ko": false,
+    "pt": false
+  },
+  "logo": "logo.png",
+  "multi": false,
+  "publishMode": "static",
+  "font": {
+    "body": "source-sans-3",
+    "heading": "lora",
+    "ar": {
+      "body": "ibm-plex-sans-arabic",
+      "heading": "noto-naskh-arabic"
+    }
+  },
+  "colorScheme": "auto",
+  "theme_color": "#2B3A67",
+  "seo": {
+    "noindex": true
+  },
+  "cssTokens": {
+    "--mx-radius-sm": "6px",
+    "--mx-radius-md": "10px",
+    "--mx-radius-lg": "14px",
+    "--mx-radius-xl": "19px"
+  },
+  "icon": "icon.png"
+}
