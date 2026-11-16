@@ -1,0 +1,40 @@
+{
+  "id": "7s2sphc934",
+  "name": {
+    "tr": "Paketler",
+    "en": "Packages",
+    "ar": "الباقات"
+  },
+  "description": {
+    "tr": "Portre, aile, ürün ve mekân çekim paketleri; KDV dahil kurgusal fiyatlar.",
+    "en": "Portrait, family, product and interior packages; fictional VAT-inclusive prices.",
+    "ar": "باقات البورتريه والعائلة والمنتجات والأماكن؛ أسعار افتراضية شاملة الضريبة."
+  },
+  "keyword": {
+    "tr": "Yaklaşım",
+    "en": "Approach",
+    "ar": "منهجنا"
+  },
+  "path": "hizmetler",
+  "icon": "sell",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "vhp17x",
+      "z86ixq"
+    ],
+    "footer": []
+  },
+  "index": 0,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Paketler",
+    "en": "Packages",
+    "ar": "الباقات"
+  },
+  "date": "2026-11-16T16:01:50.069Z",
+  "update": "2026-11-16T16:10:41.564Z"
+}
