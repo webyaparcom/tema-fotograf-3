@@ -3,17 +3,23 @@
   "name": {
     "tr": "Albümler",
     "en": "Albums",
-    "ar": "الألبومات"
+    "ar": "الألبومات",
+    "de": "Alben",
+    "ru": "Альбомы"
   },
   "description": {
     "tr": "Dört albümde seçilmiş kareler; görseller temsilîdir.",
     "en": "Selected frames in four albums; images are representative.",
-    "ar": "لقطات مختارة في أربعة ألبومات؛ الصور تمثيلية."
+    "ar": "لقطات مختارة في أربعة ألبومات؛ الصور تمثيلية.",
+    "de": "Ausgewählte Aufnahmen in vier Alben; die Bilder sind symbolisch.",
+    "ru": "Избранные кадры в четырёх альбомах; изображения носят иллюстративный характер."
   },
   "keyword": {
     "tr": "albüm, portföy",
     "en": "album, portfolio",
-    "ar": "ألبوم، معرض أعمال"
+    "ar": "ألبوم، معرض أعمال",
+    "de": "Album, Portfolio",
+    "ru": "альбом, портфолио"
   },
   "path": "referanslar",
   "icon": "photo_library",
@@ -33,7 +39,9 @@
   "title": {
     "tr": "Albümler",
     "en": "Albums",
-    "ar": "الألبومات"
+    "ar": "الألبومات",
+    "de": "Alben",
+    "ru": "Альбомы"
   },
   "date": "2026-11-16T16:01:50.074Z",
   "update": "2026-11-16T16:10:41.572Z"

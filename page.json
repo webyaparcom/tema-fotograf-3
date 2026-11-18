@@ -5,12 +5,16 @@
       "name": {
         "tr": "Paketler",
         "en": "Packages",
-        "ar": "الباقات"
+        "ar": "الباقات",
+        "de": "Pakete",
+        "ru": "Пакеты"
       },
       "description": {
         "tr": "Portre, aile, ürün ve mekân çekim paketleri; KDV dahil kurgusal fiyatlar.",
         "en": "Portrait, family, product and interior packages; fictional VAT-inclusive prices.",
-        "ar": "باقات البورتريه والعائلة والمنتجات والأماكن؛ أسعار افتراضية شاملة الضريبة."
+        "ar": "باقات البورتريه والعائلة والمنتجات والأماكن؛ أسعار افتراضية شاملة الضريبة.",
+        "de": "Pakete für Porträt, Familie, Produkt und Innenraum; fiktive Preise inkl. MwSt.",
+        "ru": "Пакеты для портретной, семейной, предметной и интерьерной съёмки; фиктивные цены с НДС."
       },
       "path": "hizmetler",
       "icon": "sell",
@@ -30,7 +34,9 @@
       "name": {
         "tr": "Yaklaşım",
         "en": "Approach",
-        "ar": "منهجنا"
+        "ar": "منهجنا",
+        "de": "Ansatz",
+        "ru": "Подход"
       },
       "status": "play",
       "id": "hakkimizda",
@@ -51,7 +57,9 @@
       "description": {
         "tr": "Işık, zaman, seçki ve izin: bir çekimin dört dokusu.",
         "en": "Light, time, edit and consent: four textures of a shoot.",
-        "ar": "الضوء والوقت والمختارات والإذن: أربعة ملامس لجلسة واحدة."
+        "ar": "الضوء والوقت والمختارات والإذن: أربعة ملامس لجلسة واحدة.",
+        "de": "Licht, Zeit, Auswahl und Erlaubnis: vier Texturen eines Shootings.",
+        "ru": "Свет, время, отбор и согласие: четыре текстуры съёмки."
       }
     },
     {
@@ -59,12 +67,16 @@
       "name": {
         "tr": "Albümler",
         "en": "Albums",
-        "ar": "الألبومات"
+        "ar": "الألبومات",
+        "de": "Alben",
+        "ru": "Альбомы"
       },
       "description": {
         "tr": "Dört albümde seçilmiş kareler; görseller temsilîdir.",
         "en": "Selected frames in four albums; images are representative.",
-        "ar": "لقطات مختارة في أربعة ألبومات؛ الصور تمثيلية."
+        "ar": "لقطات مختارة في أربعة ألبومات؛ الصور تمثيلية.",
+        "de": "Ausgewählte Aufnahmen in vier Alben; die Bilder sind symbolisch.",
+        "ru": "Избранные кадры в четырёх альбомах; изображения носят иллюстративный характер."
       },
       "path": "referanslar",
       "icon": "photo_library",
@@ -84,7 +96,9 @@
       "name": {
         "tr": "İletişim",
         "en": "Contact",
-        "ar": "اتصل بنا"
+        "ar": "اتصل بنا",
+        "de": "Kontakt",
+        "ru": "Контакты"
       },
       "status": "play",
       "id": "iletisim",
@@ -105,7 +119,9 @@
       "description": {
         "tr": "Adres, telefon ve çalışma saatleri.",
         "en": "Address, phone and opening hours.",
-        "ar": "العنوان والهاتف وساعات العمل."
+        "ar": "العنوان والهاتف وساعات العمل.",
+        "de": "Adresse, Telefon und Öffnungszeiten.",
+        "ru": "Адрес, телефон и часы работы."
       }
     }
   ],

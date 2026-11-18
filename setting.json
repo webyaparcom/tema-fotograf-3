@@ -4,12 +4,16 @@
   "description": {
     "tr": "Mira Fotoğraf Evi: portre, aile, ürün ve mekân fotoğrafı; tek sayfada çekim hikâyesi, albümler ve paketler. Demo site; görseller temsilîdir.",
     "en": "Mira Photo House: portrait, family, product and interior photography; the shoot story, albums and packages on one page. Demo site; images are representative.",
-    "ar": "ميرا للتصوير: تصوير البورتريه والعائلة والمنتجات والأماكن؛ قصة الجلسة والألبومات والباقات في صفحة واحدة. موقع تجريبي؛ الصور تمثيلية."
+    "ar": "ميرا للتصوير: تصوير البورتريه والعائلة والمنتجات والأماكن؛ قصة الجلسة والألبومات والباقات في صفحة واحدة. موقع تجريبي؛ الصور تمثيلية.",
+    "de": "Mira Fotoğraf Evi: Porträt-, Familien-, Produkt- und Innenraumfotografie; die Shooting-Geschichte, Alben und Pakete auf einer Seite. Demo-Seite; Bilder sind repräsentativ.",
+    "ru": "Mira Fotoğraf Evi: портретная, семейная, продуктовая и интерьерная фотография; история съёмки, альбомы и пакеты на одной странице. Демо-сайт; изображения являются иллюстративными."
   },
   "keyword": {
     "tr": "fotoğraf stüdyosu, portre çekimi, aile fotoğrafı, ürün fotoğrafı, çekim paketleri",
     "en": "photo studio, portrait session, family photography, product photography, photo packages",
-    "ar": "استوديو تصوير، جلسة بورتريه، تصوير عائلي، تصوير منتجات، باقات تصوير"
+    "ar": "استوديو تصوير، جلسة بورتريه، تصوير عائلي، تصوير منتجات، باقات تصوير",
+    "de": "Fotostudio, Porträtaufnahmen, Familienfotos, Produktfotografie, Shooting-Pakete",
+    "ru": "фотостудия, портретная съемка, семейная фотосессия, предметная съемка, пакеты услуг"
   },
   "category": "Kurumsal",
   "name": "Mira Fotoğraf Evi",
@@ -18,15 +22,27 @@
     "tr": true,
     "en": true,
     "ar": true,
-    "de": false,
-    "ru": false,
+    "de": true,
+    "ru": true,
     "es": false,
     "fr": false,
     "it": false,
     "ja": false,
     "zh": false,
     "ko": false,
-    "pt": false
+    "pt": false,
+    "fa": false,
+    "he": false,
+    "ur": false,
+    "nl": false,
+    "pl": false,
+    "uk": false,
+    "az": false,
+    "ka": false,
+    "el": false,
+    "bg": false,
+    "ro": false,
+    "hi": false
   },
   "logo": "logo.png",
   "multi": false,

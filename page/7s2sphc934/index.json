@@ -3,17 +3,23 @@
   "name": {
     "tr": "Paketler",
     "en": "Packages",
-    "ar": "الباقات"
+    "ar": "الباقات",
+    "de": "Pakete",
+    "ru": "Пакеты"
   },
   "description": {
     "tr": "Portre, aile, ürün ve mekân çekim paketleri; KDV dahil kurgusal fiyatlar.",
     "en": "Portrait, family, product and interior packages; fictional VAT-inclusive prices.",
-    "ar": "باقات البورتريه والعائلة والمنتجات والأماكن؛ أسعار افتراضية شاملة الضريبة."
+    "ar": "باقات البورتريه والعائلة والمنتجات والأماكن؛ أسعار افتراضية شاملة الضريبة.",
+    "de": "Pakete für Porträt, Familie, Produkt und Innenraum; fiktive Preise inkl. MwSt.",
+    "ru": "Пакеты для портретной, семейной, предметной и интерьерной съёмки; фиктивные цены с НДС."
   },
   "keyword": {
     "tr": "Yaklaşım",
     "en": "Approach",
-    "ar": "منهجنا"
+    "ar": "منهجنا",
+    "de": "Ansatz",
+    "ru": "Подход"
   },
   "path": "hizmetler",
   "icon": "sell",
@@ -33,7 +39,9 @@
   "title": {
     "tr": "Paketler",
     "en": "Packages",
-    "ar": "الباقات"
+    "ar": "الباقات",
+    "de": "Pakete",
+    "ru": "Пакеты"
   },
   "date": "2026-11-16T16:01:50.069Z",
   "update": "2026-11-16T16:10:41.564Z"
