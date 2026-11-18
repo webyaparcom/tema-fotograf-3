@@ -2,7 +2,9 @@
   "name": {
     "tr": "Yaklaşım",
     "en": "Approach",
-    "ar": "منهجنا"
+    "ar": "منهجنا",
+    "de": "Ansatz",
+    "ru": "Подход"
   },
   "status": "play",
   "category": "",
@@ -23,7 +25,9 @@
   "description": {
     "tr": "Işık, zaman, seçki ve izin: bir çekimin dört dokusu.",
     "en": "Light, time, edit and consent: four textures of a shoot.",
-    "ar": "الضوء والوقت والمختارات والإذن: أربعة ملامس لجلسة واحدة."
+    "ar": "الضوء والوقت والمختارات والإذن: أربعة ملامس لجلسة واحدة.",
+    "de": "Licht, Zeit, Auswahl und Erlaubnis: vier Texturen eines Shootings.",
+    "ru": "Свет, время, отбор и согласие: четыре текстуры съёмки."
   },
   "spot": {
     "tr": "",
@@ -34,12 +38,16 @@
   "title": {
     "tr": "Yaklaşım",
     "en": "Approach",
-    "ar": "منهجنا"
+    "ar": "منهجنا",
+    "de": "Ansatz",
+    "ru": "Подход"
   },
   "keyword": {
     "tr": "hakkımızda",
     "en": "about",
-    "ar": "من نحن"
+    "ar": "من نحن",
+    "de": "Über uns",
+    "ru": "О нас"
   },
   "text": {},
   "update": "2026-11-16T16:10:41.569Z",
